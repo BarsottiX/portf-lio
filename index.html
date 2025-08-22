@@ -1,46 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu projeto portfólio</title>
+    <title>Meu Portfólio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Washington Alves Barsotti</h1>
-        <nav>
-            <ul>
-                <li> <a href="inicio">inicio</a></li>
-                <li> <a href="sobre">Sobre</a></li>
-                <li> <a href="projetos">Projetos</a></li>
-                <li> <a href="contato">Contato</a></li>
+        <nav class="navbar">
+            <h1 class="logo">Meu Portfólio</h1>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
+            <button class="menu-toggle">☰</button>
         </nav>
-        <script src="script.js"></script>
     </header>
-    <section id="sobre">
+    <section id="Sobre">
         <h2>Sobre mim</h2>
-        <p>Sou Desenvolvedor Full stack Java Script em inicio de carreira, apaixonado por tecnologia e programação.</p>
+        <p> Olá, me chamo Washington! <br>Desenvolvedor em formação, apaixonado por tecnologia e por resolver problemas de forma criativa. Atualmente trabalho como Analista de Sistemas Júnior, onde utilizo Python para automação e bots, SQL para consultas e relatórios, além de atuar com JavaScript, HTML e CSS em projetos de front-end.
+        <br>🚀 Estou me especializando em Desenvolvimento Full Stack, com foco em Node.js e boas práticas de programação, sempre buscando evoluir minhas habilidades para criar soluções eficientes e que gerem impacto real.
+        <br>✨ O que me motiva: aprender constantemente, transformar ideias em código e desenvolver projetos que unem tecnologia e inovação.</p>
     </section>
-    
-    <section id="projetos">
-        <h2>Meus projetos</h2>
-        <ul>
-            <li>Portfolio responsivo</li>
-            <li>To-do list com Java Script</li>
-            <li>API de Filmes</li>
-        </ul>
+    <section id="Projetos">
+        <h2>Projetos</h2>
+        <div class="projetos-container">
+            <div class="projeto-card">Projeto 1</div>
+            <div class="projeto-card">Projeto 2</div>
+            <div class="projeto-card">Projeto 3</div>
+        </div>
     </section>
-
     <section id="contato">
-        <h2>Entre em contato</h2    >
-        <p>E-mail: barsottiwashington@gmail.com</p>
-          <p>LinkedIn: <a href="https://www.linkedin.com/in/washington-barsotti/">Washington Barsotti</a></p>
+        <h2>Contato</h2>
+        <form>
+            <input type="text" placeholder="Seu nome" required>
+            <input type="text" placeholder="Seu e-mail" required>
+            <textarea placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form> 
     </section>
 
-    <footer>
-        <p>@ 2025 washington-barsotti - Todos os direitos reservados.</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
